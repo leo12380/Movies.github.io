@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Screen Background with Overlays</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap');    
+        
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background-container {
+  background-image: url('https://i.ibb.co/M6Y19y6/Episodi-1-20240904-110542-0000.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+img {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 90%; /* Adjust as needed */
+  height: auto;
+  padding: 10px;
+  border-radius: 50px;
+  transform: translate(-50%, -50%); /* Ensure both horizontal and vertical centering */
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 80%; /* Adjust width for smaller screens */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure it stays centered on smaller screens */
+  }
+  h3 {
+      position: relative;
+      left: 50px;
+      margin-top: 290px;
+      color: white;
+      font-family: 'Big Shoulders Stencil Text', sans-serif;     
+  }
+  iframe{
+      display: block;
+      border: none;
+      background-color: transparent;
+      margin-left: 100px;
+      
+      }
+      </style>
+</head>
+<body>
+<div class="background-container">
+  <img src="https://i.ibb.co/cbv3f7j/1-20240904-103216-0000.jpg" alt="Image 1" class="image">
+  <h3>Title: Lovely Runner<br>
+  Genre: Romance, time travel<br>
+  Description: In the high-stakes world of<br>       stardom, Ryu Sun-jae shines as a top-tier<br> celebrity whose life, despite its public<br>
+  facade, is marred by exhaustion. Im Sol,<br>
+   an ardent admirer of Sun-jae, finds solace<br>
+    in his music after a childhood accident<br>  derailed her dreams.<br>
+    <br>
+    Add your rate</h3>
+    <iframe src="rating.html"></iframe>
+    
+   
+</div>
+</body>
+</html>
